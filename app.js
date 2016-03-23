@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
 
-const mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost/shelterapp'
+const mongoUrl = process.env.MONGOLAB_URI // || 'mongodb://localhost/shelterapp'
 
 mongoose.connect(mongoUrl, function(err) {
   if(err) {
